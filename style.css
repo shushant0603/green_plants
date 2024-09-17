@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'inter';
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #1B2316;
+}
+nav{
+    height: 86px;
+    width: 100%;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+#logo{
+    background: #fff;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: transparent;
+}
+#logo h2{
+    color: #FFFFFF;
+    font-size: 30px;
+    opacity: 75%;
+    margin-top: 5px;
+    /* font-weight: 500; */
+}
+
+#middle_content{
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    list-style: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 75%;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    opacity: 75%;
+    cursor: pointer;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+ #background_img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    position: relative;
+}
+#container .text{
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left:0 ;
+   padding: 0 2%;
+
+}
+#container .text h1{
+    font-size: 103px;
+    width: 750px;
+    margin-top: 10%;
+    color: rgba(255, 255, 255, 0.75);
+}
+.text p{
+    font-size: 20px;
+    width: 750px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.text .text_button{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.text .button1{
+    margin-top: 10px;
+    height: 55px;
+    width: 190px;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 34px;
+}
+.text .button2{
+    height: 50px;
+    width: 50px;
+    margin-top: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.text .button2 img{
+    transform: rotate(-90deg) !important;
+    scale: 2;
+}
+.text .text_button span{
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 51px;
+    margin-left:-20px ;
+}
+#plant_box{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 77px;
+    height: 500px;
+    width: 30%;
+    margin-top: 250px;
+    margin-right: 50px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#plant_box img{
+    height: 90%;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    top:-25%;
+
+}
+#plant_box .content{
+    margin-top:100px ;
+    margin-left: -45px;
+
+}
+ #plant_box h3{
+    color: #fff;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 300;
+}
+#plant_box h1{
+    color: #fff;
+    opacity: 75%;
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 500;
+}
+#plant_box .button{
+    height: 64px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    font-size: 30px;
+} 
