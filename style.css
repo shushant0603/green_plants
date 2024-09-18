@@ -68,7 +68,7 @@ nav{
      nav #logo{
         /* height: vh; */
         gap: 1em;
-     scale: 0.5;
+        scale: 0.5;
     
      }
      nav #logo h2{
@@ -76,15 +76,32 @@ nav{
        font-size: 25px;
      }
      #middle_content{
-     /* display: none; */
-     font-size: 10px;
-     gap: 1.2em;
-     margin-left: 25%;
+     /* background: black; */
+     width: 30%;
+     font-size: 8px;
+     gap: 1em;
+     margin-left: 35%;
+     display: flex;
+     justify-content: center; 
+     /* align-items: center;  */
+     /* flex-wrap: nowrap; */
+    
      /* scale: 0.5; */
      }
+     #middle_content .type{
+        display: flex;
+        text-align: center;
+        /* scale: 0.5; */
+        white-space: nowrap;
+     }
+     #middle_content .type img{
+        scale: 0.5;
+     }
+
      #icons{
         gap: 1em;
         scale: 0.5;
+        margin-left: 10px;
      }
 }
 
