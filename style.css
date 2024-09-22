@@ -58,68 +58,58 @@ nav{
     opacity: 75%;
     cursor: pointer;
 }
-@media screen and (max-width:480px) {
+
+@media screen and (max-width:768px) {
      nav{
         height:10vh ;
         /* background: #000; */
-        padding: 0 5px;
+        padding: 0 20px;
         /* gap: 1em; */
      }
      nav #logo{
         /* height: vh; */
         gap: 1em;
         scale: 0.5;
-    
      }
      nav #logo h2{
-       
        font-size: 25px;
      }
      #middle_content{
-     /* background: black; */
-     width: 30%;
-     font-size: 8px;
-     gap: 1em;
-     margin-left: 35%;
-     display: flex;
-     justify-content: center; 
-     /* align-items: center;  */
-     /* flex-wrap: nowrap; */
-    
-     /* scale: 0.5; */
+        display: none;
      }
-     #middle_content .type{
-        display: flex;
-        text-align: center;
-        /* scale: 0.5; */
-        white-space: nowrap;
-     }
-     #middle_content .type img{
-        scale: 0.5;
-     }
-
      #icons{
         gap: 1em;
-        scale: 0.5;
+        scale: 0.6;
         margin-left: 10px;
+     }
+     #container .middle_content2{
+        display: block;
      }
 }
 
 
 
 #container{
-    height: 100%;
+    height: calc(100%-15vh);
     width: 100%;
     overflow-x: hidden;
     position: relative;
     display: flex;
-    justify-content: center;
-  
-    
+    justify-content: center;    
 }
+#container .middle_content2{
+    background-color: white;
+    height:90vh;
+    width: 50%;
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        right: 0;
+        display: none;
+    }
  #background_img{
     width: 100%;
-    height: calc(100%-15vh);
+    height: 100%;
     z-index: -1;
     opacity: 0.5;
     position: relative;
@@ -239,3 +229,122 @@ nav{
     font-weight: 500;
     font-size: 30px;
 } 
+
+
+
+
+/* footer */
+#page4{
+height: 120vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+#page4 #ourBest{
+    background-color: rgba(255, 255, 255, 0.05);
+    border:0.5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.5);
+    width: 90%;
+    /* margin-top: 300px; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height:500px;
+    border-radius: 40px;
+    /* margin-top: 70px; */
+}
+#page4 footer{
+    background: #222C1D;
+    height: 40vh;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+   color:#fff ;
+   list-style: none;
+}
+#page4 footer #first,#second,#third{
+  width: 33%;
+}
+#page4 #first #logo{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+}
+#page4 #first p{
+   font-size: 14px;
+   width: 350px;
+   margin-top: 20px;
+   color: rgba(255, 255, 255, 0.75);
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#page4 #first .firstList {
+    /* list-style: none; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#first .firstlist a{
+    text-decoration: none !important;
+}
+#second{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+#second h1{
+    font-size: 20px;
+}
+#second li{
+    gap: 5px;
+}
+#third{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#third .input-container{
+    height: 60px;
+    width:320px ;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.75);;
+}
+#third input{
+    height: 60px;
+    width: 450px;
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+    font-size: 15px;
+}
+#third h2{
+    font-size: 15px;
+    margin-top: 20px;
+}
+#third h1{
+    font-size: 25px;
+}
+#third button{
+    height: 55px;
+    width: 150px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
